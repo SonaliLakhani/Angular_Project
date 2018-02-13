@@ -1,0 +1,39 @@
+.container{
+    display:grid;
+    grid-template-columns: 30% auto;
+    //size: 1px;
+    height: 10%;
+    //width : 190%;
+}
+
+.col{
+    padding: .3em 1.3em;
+}
+
+.color-dark{
+    background: #28c495;
+}
+
+.header{
+    font-family: 'Algerian';
+    font-size: 45px;
+    color: #faf7f6;
+    margin-right: 5em;
+    margin-bottom: .3em;
+     
+}
+
+.motto{
+    font-family: 'Forte';
+    font-size: 30px;
+    color:#1e13b3;
+    margin-left: 13em;
+    
+}
+
+img{
+    height: 52%;
+    width: 35%;
+    margin-top: 2em;
+    margin-left: 2em;
+}

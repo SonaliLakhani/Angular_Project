@@ -1,0 +1,25 @@
+<div class="container color-light">
+  <div class="col">
+    <form [formGroup]="registerpart2Form" novalidate>
+      <br>
+    <table align="center">
+      <label class="register_heading">Set up a password for your account</label>
+    </table><br><br>
+    <table align="center">
+      <tr>
+        <td><label class="label">Password</label></td>
+        <td><input type="password" class="textbox" name="password" placeholder="Password" formControlName="password"></td>
+      </tr>
+      <tr><tr><tr></tr>
+      <tr>
+        <td><label class="label">Confirm Password</label></td>
+        <td><input type="password" class="textbox" name="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword"></td>
+      </tr>
+    </table>
+    <table align="center">
+      <input type="submit" value="REGISTER" class="submit" (click)="registerSuccess()">
+    </table>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,100 @@
+
+
+<div class="container color-light">
+  <div class="col">
+    <form [formGroup]="registerpart1Form" novalidate>
+    <table align="center">
+      <label class="register_heading">REGISTRATION</label>
+    </table>
+    <table  align="left">      
+      <tr>
+          <td> <label class="label">First Name</label> </td>
+          <td><input type="text" class="textbox" name="firstName" placeholder="First Name" formControlName="firstName"></td>         
+          
+      </tr>
+
+      <tr>
+          <td><label class="label">Last Name</label></td>
+          <td><input type="text" class="textbox" name="lastName" placeholder="Last Name" formControlName="lastName"></td>
+          
+      </tr>
+
+      <tr>
+          <td><label class="label">Date of Birth</label></td>
+          <td><input type="date" class="textbox" name="dob" placeholder="Date of Birth" formControlName="dob"></td>
+      </tr>
+
+      <tr>
+          <td><label class="label">Mobile Number</label></td>
+          <td><input type="tel" class="textbox" name="mobileNumber" placeholder="Mobile Number" formControlName="mobileNumber"></td>
+      </tr>
+
+      <tr>
+          <td><label class="label">Aadhaar Number</label></td>
+          <td><input type="text" class="textbox" name="aadhaar" placeholder="Aadhaar Number" formControlName="aadhaar"></td>
+      </tr>
+
+
+      <tr>
+          <td><label class="label">Email id</label></td>
+          <td><input type="email" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
+      </tr>
+      </table>
+      <table align="right">
+          <tr>
+              <td> <label class="label">Address</label> </td>
+              <td></td>         
+              
+          </tr>
+    
+          <tr>
+              <td><label class="label">Line 1</label></td>
+              <td><input type="text" class="textbox" name="addLine1" placeholder="Line 1" formControlName="addLine1"></td>
+              
+          </tr>
+    
+          <tr>
+              <td><label class="label">Line 2</label></td>
+              <td><input type="text" class="textbox" name="addLine2" placeholder="Line 2" formControlName="addLine2"></td>
+          </tr>
+    
+          <tr>
+              <td><label class="label">State</label></td>
+              <td><input type="text" class="textbox" name="state" placeholder="State" formControlName="state"></td>
+          </tr>
+    
+          <tr>
+              <td><label class="label">City</label></td>
+              <td><input type="text" class="textbox" name="city" placeholder="City" formControlName="city"></td>
+          </tr>   
+    
+          <tr>
+              <td><label class="label">PIN Code</label></td>
+              <td><input type="text" class="textbox" name="pincode" placeholder="PIN Code" formControlName="pincode"></td>
+          </tr>
+      </table>
+      <table align="center">
+        <input type="submit" value="NEXT" [disabled]="!registerpart1Form.valid" class="submit" (click)="registerNext()">
+      </table>
+      </form>
+      </div>
+      </div>
+      
+      <!--<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td><label class="label">Password : </label></td>
+          <td><input type="password" class="textbox" name="password" placeholder="Password" id="mypassword" formControlName="password">                 
+             
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="checkbox">Show Password</td>
+      </tr>
+    </table>
+    <table align="center">
+      <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
+      
+
+
+
+<app-footer></app-footer>

@@ -1,0 +1,37 @@
+
+
+<div class="container color-light">
+  <div class="col">
+    <form [formGroup]="loginForm" novalidate>
+    <table align="center">
+      <label class="login_heading">LOGIN</label>
+    </table>
+    <table  align="center">
+      
+      <tr>
+          <td><label class="label">Email id     :</label></td>
+          <td><input type="text" class="textbox" name="email" placeholder="Email" formControlName="email">
+      </tr>
+      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+      <tr>
+          <td><label class="label">Password : </label></td>
+          <td><input type="password" class="textbox" name="password" placeholder="Password" id="mypassword" formControlName="password">
+                    
+             
+      </tr>
+      <!--<tr>
+        <td></td>
+        <td><input type="checkbox">Show Password</td>
+      </tr>-->
+    </table>
+    <table align="center">
+      <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
+      <input type="submit" [disabled]="!loginForm.valid" value="Login" class="submit" (click)="goToRegister()">  </table>
+    <p align="center">New User? <br><a routerLink="register">Register here</a></p>
+  </form>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+

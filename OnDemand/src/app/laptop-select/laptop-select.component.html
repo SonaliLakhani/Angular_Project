@@ -1,0 +1,43 @@
+<!-- Sonali -->
+
+<div class="container color-light">
+  <div class="col">
+    <form>
+      <br>
+    <table align="center">
+        <label class="register_heading">Enter Laptop Details</label>
+      </table>
+      <table align="center">
+        <tr>
+        <br>
+        </tr>
+          <tr>
+            <td><label class="label">Brand</label></td>
+            <td><input type="text" class="textbox" name="firstNbrandame" placeholder="Brand" formControlName="brand"></td>
+          <br></tr>
+          <tr>
+            <td><label class="label">Model</label></td>
+            <td><input type="text" class="textbox" name="model" placeholder="Model" formControlName="model"></td>
+            <br></tr>
+          <tr>
+              <td><label class="label">Purchase Date</label></td>
+              <td><input type="date" class="textbox" name="model" placeholder="Purchase Date" formControlName="purchaseDt"></td>
+              <br></tr>
+            <tr>
+                <td><label class="label">Purchase Amount</label></td>
+                <td><input type="number" min="0.00" step="1000" class="textbox" name="model" placeholder="Purchase amount" formControlName="purchaseAmt"></td>
+                <br> </tr>
+              <tr>
+                  <td><label class="label">Serial No</label></td>
+                  <td><input type="text" class="textbox" name="model" placeholder="Serial No" formControlName="imei"></td>
+                  <br></tr>
+                  <tr>
+
+                    <td><label class="label">Upload invoice copy</label></td>
+                    <td><input type="file" id="invoice" (change)="onFileChange($event)" #fileInput></td>
+                  </tr>
+          </table>
+      </form>
+      </div>
+      </div>
+
