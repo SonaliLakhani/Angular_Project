@@ -2,7 +2,7 @@
 
 <div class="container color-light">
   <div class="col">
-    <form>
+    <form [formGroup]="laptopSelectForm" novalidate>
       <br>
     <table align="center">
         <label class="register_heading">Enter Laptop Details</label>
@@ -29,13 +29,16 @@
                 <br> </tr>
               <tr>
                   <td><label class="label">Serial No</label></td>
-                  <td><input type="text" class="textbox" name="model" placeholder="Serial No" formControlName="imei"></td>
+                  <td><input type="text" class="textbox" name="model" placeholder="Serial No" formControlName="serialNo"></td>
                   <br></tr>
                   <tr>
 
                     <td><label class="label">Upload invoice copy</label></td>
-                    <td><input type="file" id="invoice" (change)="onFileChange($event)" #fileInput></td>
+                    <td><input type="file" id="invoice" (change)="onFileChange($event)" #fileInput formControlName="fileUpload"></td>
                   </tr>
+          </table>
+          <table align="center">
+            <input type="submit" value="NEXT" [disabled]="!laptopSelectForm.valid" class="submit" (click)="goToLaptopPayment()">
           </table>
       </form>
       </div>

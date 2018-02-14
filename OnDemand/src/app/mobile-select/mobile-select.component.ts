@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormControl, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-mobile-select',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobileSelectComponent implements OnInit {
 
-  constructor() { }
+  mobileSelectForm;
+  constructor(private _router : Router) { }
 
   ngOnInit() {
+    this.mobileSelectForm = new FormGroup({
+      brand:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
+      model:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
+      purchaseDt:new FormControl("",Validators.compose([Validators.required])),
+      purchaseAmt:new FormControl("",Validators.compose([Validators.required])),
+      imei:new FormControl("",Validators.compose([Validators.required])),
+      fileUpload:new FormControl("",Validators.compose([Validators.required])),
+    })
+  }
+
+  goToMobilePayment() : void{
+    this._router.navigate(['']);
   }
 
 }

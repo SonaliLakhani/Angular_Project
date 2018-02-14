@@ -19,8 +19,8 @@ export class Registerpart1Component implements OnInit {
    }
   ngOnInit() {
     this.registerpart1Form=new FormGroup({
-      firstName:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3)])),
-      lastName:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3)])),
+      firstName:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
+      lastName:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
       dob:new FormControl("",Validators.compose([Validators.required])),
       mobileNumber:new FormControl("",Validators.compose([Validators.required,Validators.minLength(10),Validators.maxLength(10),Validators.pattern("[0-9]*")])),
       aadhaar:new FormControl("",Validators.compose([Validators.required,Validators.pattern("[0-9]*")])),
@@ -32,5 +32,7 @@ export class Registerpart1Component implements OnInit {
       pincode:new FormControl("",Validators.compose([Validators.required,Validators.pattern("[0-9]*")]))
    });
   }
+
+ 
 
 }
