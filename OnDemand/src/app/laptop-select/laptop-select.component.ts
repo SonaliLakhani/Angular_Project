@@ -13,12 +13,12 @@ export class LaptopSelectComponent implements OnInit {
 
   ngOnInit() {
     this.laptopSelectForm = new FormGroup({
-      brand:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
-      model:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
+      brand:new FormControl("",Validators.compose([Validators.required,Validators.minLength(2),Validators.pattern("[a-zA-Z][a-zA-Z ]+")])),
+      model:new FormControl("",Validators.compose([Validators.required,Validators.minLength(3)])),
       purchaseDt:new FormControl("",Validators.compose([Validators.required])),
       purchaseAmt:new FormControl("",Validators.compose([Validators.required])),
       serialNo:new FormControl("",Validators.compose([Validators.required])),
-      fileUpload:new FormControl("",Validators.compose([Validators.required])),
+     // fileUpload:new FormControl("",Validators.compose([Validators.required])),
     })
   }
 
