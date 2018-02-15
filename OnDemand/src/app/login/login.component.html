@@ -1,36 +1,102 @@
 
+    <!--<div class="container">
+        <div class="row">
+            <div class="form_bg">
+                <form>
+                     <h2 class="text-center">Login Page</h2>
+                    <br/>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="userid" placeholder="User id">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd" placeholder="Password">
+                    </div>
+                    <br/>
+                    <div class="align-center">
+                        <button type="submit" class="btn btn-default" id="login">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>-->
 
-<div class="container color-light">
-  <div class="col">
-    <form [formGroup]="loginForm" novalidate>
+<!--<div class="container color-light">
+  <div class="form-horizontal">
+    <form [formGroup]="loginForm" novalidate class="form-horizontal">
     <table align="center">
       <label class="login_heading">LOGIN</label>
     </table>
-    <table  align="center">
+    <br>
+    <table align="center">
+    <div class="form-horizontal row">
+      <div class="control-group row-fluid form-inline row">
+        <tr>
+          
+          <label for="email" class="control-label"><p class="text-info">Email&nbsp;<i class="icon-star"></i></p></label>
+        -->
+          <!--<td style="width:70%">-->
+          <!--<div class="col-6">
+              <input type="text" id="name" placeholder="Email" class="form-control input-lg">
+            
+            </div>
+            
+          </tr>
+          <tr>
+            <td>
+          <label for="password" class="control-label"><p class="text-info">Password&nbsp;<i class="icon-star"></i></p></label>
+          </td>
+          <td>
+          <div class="controls">
+              <input type="password" id="name" placeholder="Password" class="form-control input-lg">
+          </div>
+          </td>
+        </tr>
+      </div>
+    </div>
+  </table>
+  <br>
+  <label for="email" class="control-label"><p class="text-info">Email&nbsp;<i class="icon-star"></i></p></label>
+  <div class="col-4">
+      <input type="text" id="name" placeholder="Email" class="form-control input-lg">
+    
+    </div>  -->   
+  <!-- <label class="label">Email id     :</label>
+          <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
+     
       
-      <tr>
-          <td><label class="label">Email id     :</label></td>
-          <td><input type="text" class="textbox" name="email" placeholder="Email" formControlName="email">
-      </tr>
-      <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
-      <tr>
-          <td><label class="label">Password : </label></td>
-          <td><input type="password" class="textbox" name="password" placeholder="Password" id="mypassword" formControlName="password">
+      
+          <label class="label">Password : </label>
+          <input type="password" class="form-control input-lg" name="password" placeholder="Password" id="mypassword" formControlName="password">-->
                     
-             
-      </tr>
+
+   
       <!--<tr>
         <td></td>
         <td><input type="checkbox">Show Password</td>
       </tr>-->
-    </table>
+      <div>
+          <table align="center">
+              <label class="login_heading">LOGIN</label>
+            </table>
+      </div>
+      <form [formGroup]="loginForm" novalidate >
+      <div class="form-group col-4">
+          <label for="inputlg" class="label">Email</label>
+          <input class="form-control input-lg" id="inputlg" type="text" placeholder="Enter your email id" formControlName="email">
+        </div>
+        <div class="form-group col-4">
+            <label for="inputlg" class="label">Password</label>
+            <input class="form-control input-lg" id="inputlg" type="password" placeholder="Enter your password" formControlName="password">
+          </div>
+    <br>
     <table align="center">
       <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
       <input type="submit" [disabled]="!loginForm.valid" value="Login" class="submit" (click)="goToRegister()">  </table>
     <p align="center">New User? <br><a routerLink="register">Register here</a></p>
-  </form>
+    </form>
+ <!-- </form>
   </div>
-</div>
+</div>-->
 
 <app-footer></app-footer>
 
