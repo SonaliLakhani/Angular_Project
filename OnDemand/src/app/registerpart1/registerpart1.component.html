@@ -6,10 +6,15 @@
     <table align="center">
       <label class="register_heading">REGISTRATION</label>
     </table>
-    <table  align="left">      
+    
+
+            
+      
+    
+    <table align="left">      
       <tr>
           <td> <label class="label">First Name</label> </td>
-          <td><input type="text" class="textbox" name="firstName" placeholder="First Name" formControlName="firstName"></td>         
+          <td><input type="text" name="firstName" class="textbox" placeholder="First Name" formControlName="firstName"></td>         
           
       </tr>
 
@@ -21,7 +26,7 @@
 
       <tr>
           <td><label class="label">Date of Birth</label></td>
-          <td><input type="date" class="textbox" name="dob" placeholder="Date of Birth" formControlName="dob"></td>
+          <td><input type="date" class="textbox"  name="dob" placeholder="Date of Birth" formControlName="dob"></td>
       </tr>
 
       <tr>
@@ -39,7 +44,9 @@
           <td><label class="label">Email id</label></td>
           <td><input type="email" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
       </tr>
+      
       </table>
+      
       <table align="right">
           <tr>
               <td> <label class="label">Address</label> </td>
@@ -73,6 +80,7 @@
               <td><input type="text" class="textbox" name="pincode" placeholder="PIN Code" formControlName="pincode"></td>
           </tr>
       </table>
+      
       <table align="center">
         <input type="submit" value="NEXT" [disabled]="!registerpart1Form.valid" class="submit" (click)="registerNext()">
       </table>
