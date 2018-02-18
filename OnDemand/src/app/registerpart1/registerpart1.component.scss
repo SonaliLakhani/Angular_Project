@@ -73,3 +73,11 @@ input:focus{
   .submit:disabled{
       background-color: #d5d6d6;
   }
+
+  input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+//actual code ends
+
+

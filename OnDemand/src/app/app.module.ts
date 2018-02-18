@@ -12,7 +12,10 @@ import { Registerpart2Component } from './registerpart2/registerpart2.component'
 import { RegisterSuccessComponent } from './register-success/register-success.component';
 import { GadgetSelectComponent } from './gadget-select/gadget-select.component';
 import { MobileSelectComponent } from './mobile-select/mobile-select.component';
-import { LaptopSelectComponent } from './laptop-select/laptop-select.component'; 
+import { LaptopSelectComponent } from './laptop-select/laptop-select.component';
+import { MobilePlanComponent } from './mobile-plan/mobile-plan.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentSuccessComponent } from './payment-success/payment-success.component'; 
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { LaptopSelectComponent } from './laptop-select/laptop-select.component';
     RegisterSuccessComponent,
     GadgetSelectComponent,
     MobileSelectComponent,
-    LaptopSelectComponent
+    LaptopSelectComponent,
+    MobilePlanComponent,
+    PaymentComponent,
+    PaymentSuccessComponent
     
   ],
   imports: [

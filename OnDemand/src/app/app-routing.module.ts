@@ -7,7 +7,9 @@ import { RegisterSuccessComponent} from './register-success/register-success.com
 import { GadgetSelectComponent } from './gadget-select/gadget-select.component';
 import { MobileSelectComponent } from './mobile-select/mobile-select.component';
 import { LaptopSelectComponent } from './laptop-select/laptop-select.component';
-
+import { MobilePlanComponent } from './mobile-plan/mobile-plan.component';
+import { PaymentComponent } from './payment/payment.component';
+import {PaymentSuccessComponent} from './payment-success/payment-success.component';
 
 const routes: Routes = [
   {
@@ -37,7 +39,19 @@ const routes: Routes = [
   {  
     path:'laptopSelect',
     component:LaptopSelectComponent
-  }
+  },
+  {  
+    path:'mobilePlan',
+    component:MobilePlanComponent
+  },
+  {  
+    path:'payment',
+    component:PaymentComponent
+  },
+  {  
+    path:'paymentSuccess',
+    component:PaymentSuccessComponent
+  },
 ];
 
 @NgModule({

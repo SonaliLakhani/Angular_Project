@@ -1,0 +1,38 @@
+<div class="container1 color-light">
+    <div class="col">
+      <form [formGroup]="mobilePlanForm" novalidate>
+        <br>
+      <table align="center">
+          <label class="register_heading">Choose Your Plan</label>
+      </table>
+      <table align="center">
+          <tr>
+          <br>
+          </tr>
+            <tr>
+              <td><label class="label">Plan</label></td>
+              <td><select name="plan" formControlName="plan">
+                    <option>--Plan--</option>
+                    <option>Platinum Plus</option>
+                    <option>Gold Plus</option>
+                    <option>Silver Plus</option>
+                  </select>&nbsp;&nbsp;<a>Click here for Plan details</a></td>
+            <br></tr>
+            <tr>
+              <td><label class="label">Period</label></td>
+              <td><input type="radio" name="period" formControlName="period"> Per Day
+                <input type="radio" name="period" formControlName="period"> Per Week
+                <input type="radio" name="period" formControlName="period"> Per Month</td>
+              <br></tr>
+            <tr>
+                <td><label class="label">Premium</label></td>
+                <td><input type="text" class="textbox premium" name="premium" placeholder="premium" formControlName="premium" value="1000" disabled></td>
+                <br></tr>              
+            </table>
+            <table align="center">
+              <input type="submit" value="Proceed To Payment" [disabled]="!mobilePlanForm.valid" class="submit" (click)="goToPayment()">
+            </table>
+      </form>
+    </div>
+  </div>
+  <app-footer></app-footer>
