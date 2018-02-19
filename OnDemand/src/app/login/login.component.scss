@@ -1,6 +1,9 @@
 
 .container{
-    display:grid;
+    //display:grid;
+    background-color: #e7ebf0;
+    //position: relative;
+    //padding: 0%;
 }
 
 .col{
@@ -21,13 +24,13 @@
     align-self: center;
    // color: yellow;
    // caret-color: red;
-   background-color: rgb(181, 222, 228);
+   background-color: rgb(224, 236, 204);
    color: #DE2A00;
   
 }
 
 input:focus{
-    background-color: #e7df6b;
+    background-color: #fcfcce;
 }
 
 .submit{
@@ -54,7 +57,7 @@ input:focus{
     transform: translateY(4px);
   }
 
-  .submit:disabled{
+  .buttonsize:disabled{
       background-color: #d5d6d6;
   }
 
@@ -68,8 +71,8 @@ input:focus{
 
 .login_heading{
     font-family: 'Elephant';
-    font-size:30px;
-    color: #08314d;
+    //font-size:30px;
+    color: #1995e7;
 }
 
 table{
@@ -130,6 +133,16 @@ div{
 input[type=date]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     display: none;
+}
+
+.buttonsize{
+    width: 100px;
+    border-radius: 13%;
+    height: 60px;
+    font-size: 20px;
+    color: #1995e7;
+    border: 0;
+    background-color: #9fee9d;
 }
 
 

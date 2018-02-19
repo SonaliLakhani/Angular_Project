@@ -1,7 +1,10 @@
 
-.footer{
+footer{
     background: #28c495;
-    margin-top: -20px;;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    //margin-top: -20px;;
 }
 
 .policies{    
@@ -11,7 +14,7 @@
 
 .keepintouch{
     margin-left: 650px;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
     font-family: 'Times New Roman';
     font-size: 20px;
 }

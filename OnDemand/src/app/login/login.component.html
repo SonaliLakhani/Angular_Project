@@ -81,29 +81,32 @@
       </tr>-->
 
       <!--actual code-->
-      <div>
+      <br><br>
+      <div class="container w-50 p-3">
+      <div class="login_heading">
           <table align="center">
-              <label class="login_heading">LOGIN</label>
+              <label class="login_heading"><h1><b>LOGIN</b></h1></label>
             </table>
       </div>
       <form [formGroup]="loginForm" novalidate >
           
-      <div class="form-group col-4">
-          <label for="inputlg" class="label">Email</label>
-                    
-          <input class="form-control input-lg fa" id="inputlg" type="text" placeholder="Enter your email id" formControlName="email">
+      <div class="form-group col-6">
+          <label for="inputlg" class="label">Email</label>                    
+          <input class="form-control input-lg" id="inputlg" type="text" placeholder="Enter your email id" formControlName="email">
         </div>
         
-        <div class="form-group col-4">
+        <div class="form-group col-6">
             <label for="inputlg" class="label">Password</label>
             <input class="form-control input-lg" id="inputlg" type="password" placeholder="Enter your password" formControlName="password">
           </div>
     <br>
     <table align="center">
       <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
-      <input type="submit" [disabled]="!loginForm.valid" value="Login" class="submit" (click)="goToRegister()">  </table>
-    <p align="center">New User? <br><a routerLink="register">Register here</a></p>
+      <input type="submit" [disabled]="!loginForm.valid" value="Login" class="btn btn-info buttonsize" (click)="goToRegister()">  </table>
+    <br>
+      <p align="center">New User? <br><a routerLink="register">Register here</a></p>
     </form> 
+  </div>
     <!--actual code ends-->
  <!-- </form>
   </div>
