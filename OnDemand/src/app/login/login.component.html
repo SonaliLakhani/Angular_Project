@@ -81,32 +81,37 @@
       </tr>-->
 
       <!--actual code-->
-      <br><br>
-      <div class="container w-50 p-3">
+      <!--w-50 p-2-->
+      <!--container w-50 p-3 h-25 -->
+      <div class="container-fluid">
+       
       <div class="login_heading">
           <table align="center">
               <label class="login_heading"><h1><b>LOGIN</b></h1></label>
             </table>
       </div>
-      <form [formGroup]="loginForm" novalidate >
+      <form [formGroup]="loginForm" class="container was-validated" novalidate="" >
           
       <div class="form-group col-6">
-          <label for="inputlg" class="label">Email</label>                    
-          <input class="form-control input-lg" id="inputlg" type="text" placeholder="Enter your email id" formControlName="email">
+          <label for="email" class="form-control-label">Email</label>                    
+          <input class="form-control is-invalid" id="email" type="text" placeholder="Enter your email id" name="email" formControlName="email" required>
+          <!--<div class="invalid-feedback">Email id is required</div> -->
         </div>
         
         <div class="form-group col-6">
-            <label for="inputlg" class="label">Password</label>
-            <input class="form-control input-lg" id="inputlg" type="password" placeholder="Enter your password" formControlName="password">
+            <label for="inputlg" class="form-control-label label">Password</label>
+            <input class="form-control input-lg is-invalid" id="inputlg" type="password" placeholder="Enter your password" formControlName="password" required>
           </div>
-    <br>
+          <br>
+    
     <table align="center">
       <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
       <input type="submit" [disabled]="!loginForm.valid" value="Login" class="btn btn-info buttonsize" (click)="goToRegister()">  </table>
-    <br>
+    
       <p align="center">New User? <br><a routerLink="register">Register here</a></p>
     </form> 
   </div>
+
     <!--actual code ends-->
  <!-- </form>
   </div>

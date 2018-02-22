@@ -1,12 +1,71 @@
 
 <div class="container1 color-light">
     <div class="col">
-      <form [formGroup]="paymentForm" novalidate>
+      <form [formGroup]="paymentForm" class="was-validated" novalidate>
         <br>
       <table align="center">
           <label class="register_heading">Payment</label>
         </table>
-        <table align="center">
+        <div class="container-fluid">
+            <div class="form-group col-4 dropdown">
+                <label for="card" class="control-label label">Type of Card </label>
+                <select name="card" formControlName="card" class="form-control input-lg is-invalid" placeholder="Choose Plan" required>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>  
+                  </select>             
+                </div>
+                <div class="form-group col-4">
+                    <label for="nameOnCard" class="control-label label">Name on Card </label>                   
+                    <input class="form-control input-lg is-invalid" id="nameOnCard" type="text" name="nameOnCard"  placeholder="Name on Card" formControlName="nameOnCard" required>
+                    <!--<div class="invalid-feedback">Email id is required</div> -->
+                  </div>
+                  <div class="form-group col-4">
+                      <label for="cardNumber" class="control-label label">Card Number</label>                   
+                      <input class="form-control input-lg is-invalid" id="cardNumber" type="text" name="cardNumber"  placeholder="Card Number" formControlName="cardNumber" required>
+                      <!--<div class="invalid-feedback">Email id is required</div> -->
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="expMonth" class="control-label label">Expiration Date</label>
+                        <div class="col-4">
+                        <select name="expMonth" formControlName="expMonth" class="form-control is-invalid" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option> 
+                            <option>4</option>
+                            <option>5</option>                 
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                          </select> <br> <select name="expYear" formControlName="expYear" class="form-control is-invalid" required>
+                              <option>2018</option>
+                              <option>2019</option>
+                              <option>2020</option> 
+                              <option>2021</option>
+                              <option>2022</option>                 
+                              <option>2023</option>
+                              <option>2024</option>
+                              <option>2025</option>
+                              <option>2026</option>
+                              <option>2027</option>
+                              <option>2028</option>
+                              <option>2029</option>
+                            </select>      
+                          </div>          
+                        </div>
+                        <table align="center">
+                            <input type="submit" value="Make Payment" [disabled]="!paymentForm.valid" class="submit" (click)="goToPaymentSuccess()">
+                          </table> </div>
+                          </form>
+                          </div>
+                          </div>
+                          
+
+          <!--old code starts-->
+       <!-- <table align="center">
           <tr>
           <br>
           </tr>
@@ -66,6 +125,6 @@
             </table>
         </form>
         </div>
-        </div>
+        </div>-->
         <app-footer></app-footer>
   

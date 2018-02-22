@@ -86,3 +86,28 @@ input[type=date]::-webkit-inner-spin-button {
 a{
     text-decoration:#121213;
 }
+
+div{
+    //width: 100px;
+    //height: 100px;
+    background-color: #e7ebf0;
+
+    position: -ms-page;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.radioLabel{
+    font-family: 'Rockwell';
+    font-size: 20px;
+    //color: rgb(247, 250, 252);
+    color: #28c495;
+    //margin-left: 600px;
+    //margin-top:6em;
+}
+
+

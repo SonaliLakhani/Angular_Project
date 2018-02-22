@@ -1,12 +1,113 @@
 <!-- Sonali -->
 <div class="container1 color-light">
   <div class="col">
-    <form [formGroup]="mobileSelectForm" novalidate>
-      <br>
+    <form [formGroup]="mobileSelectForm" class="was-validated" novalidate>
+      
     <table align="center">
         <label class="register_heading">Enter Mobile Details</label>
       </table>
-      <table align="center">
+      <!--bootstrap code starts-->
+      
+      <div class="container-fluid">
+          <div class="form-group col-4">
+              <label for="brand" class="control-label label">Brand </label>                   
+              <input class="form-control input-lg is-invalid" id="brand" type="text" name="brand"  placeholder="Brand" formControlName="brand" required>
+              <!--<div class="invalid-feedback">Email id is required</div> -->
+            </div>
+            <div class="form-group col-4">
+                <label for="model" class="control-label label">Model </label>                    
+                <input class="form-control is-invalid" id="model" type="text" name="model"  placeholder="Model" formControlName="model" required>
+                <!--<div class="invalid-feedback">Email id is required</div> -->
+              </div>
+              <div class="form-group col-4">
+                  <label for="purchaseDt" class="control-label label">Purchase Date </label>                  
+                  <input class="form-control is-invalid" id="purchaseDt" type="date" name="purchaseDt"  placeholder="Purchase Date" formControlName="purchaseDt" required>
+                  <!--<div class="invalid-feedback">Email id is required</div> -->
+                </div>
+                <div class="form-group col-4">
+                    <label for="brand" class="control-label label">Purchase Amount </label>                   
+                    <input class="form-control input-lg is-invalid" id="purchaseAmt" type="text" name="purchaseAmt"  placeholder="Purchase Amount" formControlName="purchaseAmt" required>
+                    <!--<div class="invalid-feedback">Email id is required</div> -->
+                  </div>
+                <div class="form-group col-4">
+                    <label for="imei" class="control-label label">IMEI No</label>   
+                    <input class="form-control is-invalid" id="imei" type="text" name="imei"  placeholder="IMEI No" formControlName="imei" required>       
+                  <!--<div class="invalid-feedback">Email id is required</div> -->
+                  </div>
+                  <div class="form-group col-4">
+                      <label for="invoice" class="control-label label">Upload invoice copy</label>     
+                      <input class="form-control is-invalid" id="invoice" type="file" name="invoice"  placeholder="IMEI No" formControlName="invoice" required>
+                    <!--<div class="invalid-feedback">Email id is required</div> -->
+                    </div>
+        </div>
+
+        <table align="center">
+            <input type="submit" value="NEXT" [disabled]="!mobileSelectForm.valid" class="submit" (click)="goToMobilePayment()">
+          </table>
+          </form>
+          </div>
+          </div>
+          
+
+
+        <!--<div class="form-horizontal main-div">
+        <div class="control-group form-inline col-10">
+        <label for="brand" class="control-label label">Brand </label> 
+        <div class="controls">                 
+        <input class="form-control input-lg is-invalid" id="brand" type="text" name="brand"  placeholder="Brand"formControlName="brand" required>
+        <div class="invalid-feedback">Email id is required</div>
+      </div>
+      </div>
+      <div class="control-group form-inline col-10">
+          <label for="brand" class="control-label label">Model </label>  
+          <div class="controls">                 
+          <input class="form-control is-invalid" id="model" type="text" name="model"  placeholder="Model" formControlName="model" required>
+          <div class="invalid-feedback">Email id is required</div>
+        </div>
+        </div>
+        <div class="control-group form-inline col-10">
+          <label for="brand" class="control-label label">Purchase Date </label>  
+          <div class="controls">                 
+          <input class="form-control is-invalid" id="purchaseDt" type="date" name="purchaseDt"  placeholder="Purchase Date" formControlName="purchaseDt" required>
+          <div class="invalid-feedback">Email id is required</div>
+        </div>
+        </div>
+        <div class="control-group form-inline col-10">
+          <label for="brand" class="control-label label">IMEI No</label>  
+          <div class="controls">                 
+          <input class="form-control is-invalid" id="imei" type="text" name="imei"  placeholder="IMEI No" formControlName="imei" required>
+          <div class="invalid-feedback">Email id is required</div>
+        </div>
+        </div>
+        <div class="control-group form-inline col-10">
+          <label for="brand" class="control-label label">Upload invoice copy</label>  
+          <div class="controls">                 
+          <input class="form-control is-invalid" id="invoice" type="file" name="invoice"  placeholder="IMEI No" formControlName="invoice" required>
+          <div class="invalid-feedback">Email id is required</div>
+        </div>
+        </div>
+     
+        <table align="center">
+          <input type="submit" value="NEXT" [disabled]="!mobileSelectForm.valid" class="submit" (click)="goToMobilePayment()">
+        </table>
+      </div>
+    
+
+      
+      
+      <div class="form-group col-10">
+          <label for="inputlg" class="label">Password</label>
+          <input class="form-control input-lg" id="inputlg" type="password" placeholder="Enter your password" formControlName="password">
+        </div>
+        <br>
+  
+  <table align="center">-->
+    <!--<button type="button"[disabled]="!loginForm.valid" class="submit" [routerLink]="['register']">Login</button>-->
+    <!--<input type="submit" [disabled]="!loginForm.valid" value="Login" class="btn btn-info buttonsize" (click)="goToRegister()">  </table>-->
+
+    <!--bootstrap code ends-->
+    <!--old code-->
+      <!--<table align="center">
         <tr>
         <br>
         </tr>
@@ -41,5 +142,5 @@
           </table>
       </form>
       </div>
-      </div>
+      </div> -->
       <app-footer></app-footer>

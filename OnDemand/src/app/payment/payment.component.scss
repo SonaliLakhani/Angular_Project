@@ -43,7 +43,7 @@
 }
 
 input:focus{
-    background-color: #e7df6b;
+    background-color: #fcfcce;
 }
 
 .submit{
@@ -77,4 +77,18 @@ input:focus{
 input[type=date]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     display: none;
+}
+
+div{
+    //width: 100px;
+    //height: 100px;
+    background-color: #e7ebf0;
+
+    position: -ms-page;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }

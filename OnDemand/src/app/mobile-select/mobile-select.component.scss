@@ -21,7 +21,7 @@
 
 .label{
     font-family: 'Rockwell';
-    font-size: 30px;
+    font-size: 26px;
     //color: rgb(247, 250, 252);
     color: rgb(23, 193, 223);
     //margin-left: 600px;
@@ -37,13 +37,13 @@
     align-self: center;
    // color: yellow;
    // caret-color: red;
-   background-color: rgb(181, 222, 228);
+   background-color: rgb(224, 236, 204);
    color: #DE2A00;
   
 }
 
 input:focus{
-    background-color: #e7df6b;
+    background-color:  #fcfcce;
 }
 
 .submit{
@@ -78,3 +78,43 @@ input[type=date]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     display: none;
 }
+
+.form-inline {
+    padding:10px;
+}
+
+.form-inline > * {
+    margin:10px 20px !important;
+}
+
+.main-div {
+    
+        //width: 100px;
+        //height: 100px;
+        background-color: #e7ebf0;    
+        //position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;      
+    
+        margin: auto;
+    
+
+}
+
+div{
+    //width: 100px;
+    //height: 100px;
+    background-color: #e7ebf0;
+
+    position: -ms-page;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+
