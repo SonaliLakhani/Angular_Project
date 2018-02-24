@@ -16,7 +16,7 @@ import { LaptopSelectComponent } from './laptop-select/laptop-select.component';
 import { MobilePlanComponent } from './mobile-plan/mobile-plan.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component'; 
-
+import {SharedServiceService} from './shared-service.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { PaymentSuccessComponent } from './payment-success/payment-success.compo
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [SharedServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

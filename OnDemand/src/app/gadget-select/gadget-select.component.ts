@@ -11,6 +11,15 @@ export class GadgetSelectComponent implements OnInit {
   constructor(private router : Router) { }
 
   ngOnInit() {
+
   }
 
+  goToMobileSelect(){
+    //console.log("hi");
+    this.router.navigate(['/mobileSelect']);
+  }
+
+  goToLaptopSelect(){
+    this.router.navigate(['/laptopSelect']);
+  }
 }

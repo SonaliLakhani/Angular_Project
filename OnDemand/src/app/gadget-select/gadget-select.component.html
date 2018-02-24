@@ -6,12 +6,12 @@
         </table>
         <table  align="center">
             <tr>
-                <td><label class="label">To insure Mobile Phones - <a routerLink="/mobileSelect">Click here</a></label></td>
-                <td><label class="label">To insure Laptops - <a routerLink="/laptopSelect">Click here</a></label></td>
+                <td><label class="label">To insure Mobile Phones - Select your mobile brand <!--<a routerLink="/mobileSelect">Click here</a>--></label></td>
+                <td><label class="label">To insure Laptops - Select your laptop brand <!--<a routerLink="/laptopSelect">Click here</a>--></label></td>
             </tr>
             <tr>
-              <td><img src="../assets/mobile.jpg" alt="mobile" class="mobile"/></td>
-              <td><img src="../assets/laptop.jpg" alt="mobile" class="mobile"/></td>
+              <td><img src="../assets/mobile.jpg" alt="mobile" class="img-thumbnail" (click)="goToMobileSelect()"/></td>
+              <td><img src="../assets/laptop.jpg" alt="mobile" class="img-thumbnail" (click)="goToLaptopSelect()"/></td>
             </tr>
         </table>
         </form>       

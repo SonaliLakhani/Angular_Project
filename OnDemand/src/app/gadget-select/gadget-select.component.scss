@@ -60,7 +60,7 @@ input:focus{
 
 .label{
     font-family: 'Rockwell';
-    font-size: 30px;
+    font-size: 23px;
     color: rgb(23, 193, 223);
     //margin-left: 600px;
     //margin-top:6em;
@@ -93,3 +93,18 @@ a{
     color: #211fc0;
 }
 
+
+
+img:hover { background-color: #e0f190;}
+
+img:active {
+    background-color: #e0f190;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    // /cursor: pointer;
+  }
+img{
+    cursor: pointer;
+    height: 50%;
+    width: 60%;
+}

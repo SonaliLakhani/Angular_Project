@@ -42,30 +42,31 @@
 
       <tr>
           <td><label class="label">Email id</label></td>
-          <td><input type="email" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
-      </tr>
+          <td><input type="email"  [(ngModel)]="emailId" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
+            email is : {{emailId}}
+        </tr>
       
       </table>
       
       <table align="right">
           <tr>
-              <td> <label class="label">Address</label> </td>
+              <td> <label class="label"></label> </td>
               <td></td>         
               
           </tr>
     
           <tr>
-              <td><label class="label">Line 1</label></td>
-              <td><input type="text" class="textbox" name="addLine1" placeholder="Line 1" formControlName="addLine1"></td>
+              <td><label class="label">Password</label></td>
+              <td><input type="password" class="textbox" name="password" placeholder="Password" formControlName="password"></td>
               
           </tr>
     
           <tr>
-              <td><label class="label">Line 2</label></td>
-              <td><input type="text" class="textbox" name="addLine2" placeholder="Line 2" formControlName="addLine2"></td>
+              <td><label class="label">Confirm password</label></td>
+              <td><input type="password" class="textbox" name="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword"></td>
           </tr>
 
-          <tr>
+         <!-- <tr>
             <td><label class="label">City</label></td>
             <td><input type="text" class="textbox" name="city" placeholder="City" formControlName="city"></td>
         </tr> 
@@ -79,11 +80,11 @@
           <tr>
               <td><label class="label">PIN Code</label></td>
               <td><input type="text" class="textbox" name="pincode" placeholder="PIN Code" formControlName="pincode"></td>
-          </tr>
+          </tr>-->
       </table>
       
       <table align="center">
-        <input type="submit" value="NEXT" [disabled]="!registerpart1Form.valid" class="submit" (click)="registerNext()">
+        <input type="submit" value="NEXT" class="submit" (click)="registerNext()">
       </table>
       </form>
       </div>
