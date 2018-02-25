@@ -1,0 +1,38 @@
+<div class="container1 color-light">
+    <div class="col">
+        <form [formGroup]="loginForm" novalidate>
+        <table align="center">
+            <label class="login_heading">GADGET SELECTION</label>
+          </table>
+          <table  align="center">
+                  <tr>
+                      <td><label class="label">To insure Mobile <!--<a routerLink="/mobileSelect">Click here</a>--></label></td>
+                      <td><label class="label">Phones - Select your  <!--<a routerLink="/mobileSelect">Click here</a>--></label></td>
+                      <td><label class="label">&nbsp;Mobile Brand</label></td>                      
+                    </tr>
+          
+                      <tr>
+                          <td align="center"><img src="../assets/rsz_samsung_logo.png" alt="mobile" class="img-thumbnail" (click)="goToSamsungSelect()"/></td>
+                          <td align="center"><img src="../assets/rsz_apple_logo.png" alt="mobile" class="img-thumbnail" (click)="goToAppleSelect()"/></td>
+                          <td align="center"><img src="../assets/rsz_lenovo_logo.png" alt="mobile" class="img-thumbnail" /></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                              <td align="center"><img src="../assets/rsz_oneplus_logo.png" alt="mobile" class="img-thumbnail"/></td>
+                              <td align="center"><img src="../assets/rsz_oppo_logo.png" alt="mobile" class="img-thumbnail"/></td>
+                              <td align="center"><img src="../assets/rsz_vivo_logo.png" alt="mobile" class="img-thumbnail"/></td>    
+                        </tr>  
+          </table>
+          
+          </form>       
+      </div>
+      </div>
+      <br>
+      <app-footer></app-footer>

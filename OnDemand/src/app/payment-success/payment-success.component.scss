@@ -1,0 +1,37 @@
+.label{
+    font-family: 'Rockwell';
+    font-size: 45px;
+    //color: rgb(247, 250, 252);
+    color: rgb(23, 193, 223);
+    //margin-left: 600px;
+    margin-top:50px;
+    align-content : center;
+}
+
+.submit{
+    //border:0;
+    display:block;
+    padding: 1em 2em;
+    background: #a5f883;
+    color: rgb(20, 132, 207);
+    font-size: 20px;
+    font-family: 'Rockwell';
+    margin-bottom: 100px;
+    margin-top: 35px;
+    cursor:pointer;
+    border-radius: 13%;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit:hover {background-color: #7ef84e}
+
+.submit:active {
+    background-color: #7ef84e;
+    //box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .submit:disabled{
+      background-color: #d5d6d6;
+  }

@@ -16,10 +16,10 @@ export class GadgetSelectComponent implements OnInit {
 
   goToMobileSelect(){
     //console.log("hi");
-    this.router.navigate(['/mobileSelect']);
+    this.router.navigate(['/mobileBrandSelect']);
   }
 
   goToLaptopSelect(){
-    this.router.navigate(['/laptopSelect']);
+    this.router.navigate(['/laptopbrandSelect']);
   }
 }

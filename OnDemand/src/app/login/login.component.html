@@ -91,17 +91,18 @@
             </table>
       </div>
       <form [formGroup]="loginForm" class="container was-validated" novalidate="" >
-          
-      <div class="form-group col-6">
+        <div class="well">
+      <div class="form-group col-4">
           <label for="email" class="form-control-label label">Email</label>                    
           <input class="form-control is-invalid" id="email" type="text" placeholder="Enter your email id" name="email" formControlName="email" required>
           <!--<div class="invalid-feedback">Email id is required</div> -->
         </div>
         
-        <div class="form-group col-6">
+        <div class="form-group col-4">
             <label for="inputlg" class="form-control-label label">Password</label>
             <input class="form-control input-lg is-invalid" id="inputlg" type="password" placeholder="Enter your password" formControlName="password" required>
           </div>
+          
           <br>
     
     <table align="center">
@@ -109,8 +110,9 @@
       <input type="submit" [disabled]="!loginForm.valid" value="Login" class="btn btn-info buttonsize" (click)="goToRegister()">  </table>
     
       <p align="center">New User? <br><a routerLink="register">Register here</a></p>
+      </div>
     </form> 
-  </div>
+  </div><br>
 
     <!--actual code ends-->
  <!-- </form>

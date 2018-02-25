@@ -10,23 +10,23 @@
       <div class="container-fluid">
           <div class="form-group col-4 dropdown">
               <label for="brand" class="control-label label">Plan </label>
-              <select name="plan" formControlName="plan" class="form-control input-lg is-invalid" placeholder="Choose Plan" required>
+              <select name="plan" [(ngModel)]="plan" formControlName="plan" class="form-control input-lg is-invalid" placeholder="Choose Plan" required>
                   
-                  <option>Platinum Plus</option>
-                  <option>Gold Plus</option>
-                  <option>Silver Plus</option>
-                </select>             
+                  <option value="Platinum Plus">Platinum Plus</option>
+                  <option value="Gold Plus">Gold Plus</option>
+                  <option value="Silver Plus">Silver Plus</option>
+                </select> <a href="/mobilePlan">Click here for plan details</a>             
               </div>
             <div class="form-group col-4 radio">
-                <label for="model" class="control-label label">Period </label><br>   
-                <input type="radio" name="period" formControlName="period"> <font class="radioLabel">Per Day</font> &nbsp;&nbsp;
-                <input type="radio" name="period" formControlName="period"> <font class="radioLabel">Per Week</font> &nbsp;&nbsp;
-                <input type="radio" name="period" formControlName="period"> <font class="radioLabel">Per Month</font>               
+                <label for="period" class="control-label label">Period </label><br>   
+                <input type="radio"  [(ngModel)]="period1" value="Per Day" name="period" formControlName="period" (click)="perDay()"> <font class="radioLabel">Per Day</font> &nbsp;&nbsp;
+                <input type="radio"  [(ngModel)]="period1" value="Per Week" name="period" formControlName="period" (click)="perWeek()"> <font class="radioLabel">Per Week</font> &nbsp;&nbsp;
+                <input type="radio"  [(ngModel)]="period1" value="Per Month" name="period" formControlName="period" (click)="perMonth()"> <font class="radioLabel">Per Month</font>               
             </div>
               
                 <div class="form-group col-4">
-                    <label for="premium" class="control-label label">Premium</label>                   
-                    <input class="form-control input-lg " id="premium" type="text" name="premium"  value="3000" formControlName="premium" disabled>
+                    <label for="premium" class="control-label label">Premium</label>                                       
+                    <input class="form-control input-lg" id="premium" type="text" name="premium"  [value]="premium" formControlName="premium" disabled>
                     <!--<div class="invalid-feedback">Email id is required</div> -->
                   </div>
                 

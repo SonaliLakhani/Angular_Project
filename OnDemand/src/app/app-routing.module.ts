@@ -10,6 +10,12 @@ import { LaptopSelectComponent } from './laptop-select/laptop-select.component';
 import { MobilePlanComponent } from './mobile-plan/mobile-plan.component';
 import { PaymentComponent } from './payment/payment.component';
 import {PaymentSuccessComponent} from './payment-success/payment-success.component';
+import {MobileBrandSelectComponent} from './mobile-brand-select/mobile-brand-select.component';
+import { SamsungSelectComponent } from './samsung-select/samsung-select.component';
+import { AppleSelectComponent } from './apple-select/apple-select.component';
+import {LaptopBrandSelectComponent} from './laptop-brand-select/laptop-brand-select.component';
+import { HpSelectComponent } from './hp-select/hp-select.component';
+import { AcerSelectComponent } from './acer-select/acer-select.component';
 
 const routes: Routes = [
   {
@@ -52,6 +58,31 @@ const routes: Routes = [
     path:'paymentSuccess',
     component:PaymentSuccessComponent
   },
+  {  
+    path:'mobileBrandSelect',
+    component:MobileBrandSelectComponent
+  },
+  {  
+    path:'samsungSelect',
+    component:SamsungSelectComponent
+  },
+  {  
+    path:'appleSelect',
+    component:AppleSelectComponent
+  },
+  {  
+    path:'laptopbrandSelect',
+    component:LaptopBrandSelectComponent
+  },
+  {  
+    path:'hpSelect',
+    component:HpSelectComponent
+  },
+  {  
+    path:'acerSelect',
+    component:AcerSelectComponent
+  },
+
 ];
 
 @NgModule({

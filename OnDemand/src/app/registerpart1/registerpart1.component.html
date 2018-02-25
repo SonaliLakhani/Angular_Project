@@ -2,53 +2,111 @@
 
 <div class="container1 color-light">
   <div class="col">
-    <form [formGroup]="registerpart1Form" novalidate>
+    <form [formGroup]="registerpart1Form" class="was-validated" novalidate>
     <table align="center">
       <label class="register_heading">REGISTRATION</label>
     </table>
     
-
-            
-      
+    <!-- bootstrap code starts-->
+    <table align="center">
+        <div class="personal_details">           
+              <div class="form-group row">
+                    <label for="firstName" class="col-sm-5 col-form-label label">First Name</label>                 
+                <div class="col-3">
+                    <input type="text" class="form-control textbox" [(ngModel)]="firstName" name="firstName" placeholder="First Name" formControlName="firstName" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="lastName" class="col-sm-5 col-form-label label">Last Name</label>                 
+                <div class="col-3">
+                    <input type="text" class="form-control textbox" [(ngModel)]="lastName" name="lastName" placeholder="Last Name" formControlName="lastName" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="dob" class="col-sm-5 col-form-label label">Date of Birth</label>                 
+                <div class="col-3">
+                    <input type="date" class="form-control textbox" [(ngModel)]="dob" name="dob" placeholder="Date of Birth" formControlName="dob" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="mobileNumber" class="col-sm-5 col-form-label label">Mobile Number</label>                 
+                <div class="col-3">
+                    <input type="text" class="form-control textbox" [(ngModel)]="mobileNumber" name="mobileNumber" placeholder="Mobile Number" formControlName="mobileNumber" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="aadhaar" class="col-sm-5 col-form-label label">Aadhaar Number</label>                 
+                <div class="col-3">
+                    <input type="text" class="form-control textbox" [(ngModel)]="aadhaar" name="aadhaar" placeholder="Aadhaar Number" formControlName="aadhaar" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="email" class="col-sm-5 col-form-label label">Email id</label>                 
+                <div class="col-3">
+                    <input type="text" class="form-control textbox" [(ngModel)]="email" name="email" placeholder="Email id" formControlName="email" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="password" class="col-sm-5 col-form-label label">Password</label>                 
+                <div class="col-3">
+                    <input type="password" class="form-control textbox" [(ngModel)]="password" name="password" placeholder="Password" formControlName="password" required>
+                </div>
+                </div> 
+                <div class="form-group row">
+                        <label for="confirmPassword" class="col-sm-5 col-form-label label">Confirm Password</label>                 
+                    <div class="col-3">
+                        <input type="password" class="form-control textbox" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword" required>
+                    </div>
+                    </div>      
+              </div>
+              </table>
+              <table align="center">
+                    <input type="submit" [disabled]="!registerpart1Form.valid" value="NEXT" class="submit"  (click)="registerNext()">
+                  </table>
+                  </form>
+                  </div>
+                  </div>
+              
+                          
+    <!-- bootstrap code ends-->
     
-    <table align="left">      
+    <!--<table align="left">      
       <tr>
           <td> <label class="label">First Name</label> </td>
-          <td><input type="text" name="firstName" class="textbox" placeholder="First Name" formControlName="firstName"></td>         
+          <td><input type="text" [(ngModel)]="firstName" name="firstName" class="textbox" placeholder="First Name" formControlName="firstName"></td>         
           
       </tr>
 
       <tr>
           <td><label class="label">Last Name</label></td>
-          <td><input type="text" class="textbox" name="lastName" placeholder="Last Name" formControlName="lastName"></td>
+          <td><input type="text" [(ngModel)]="lastName" class="textbox" name="lastName" placeholder="Last Name" formControlName="lastName"></td>
           
       </tr>
 
       <tr>
           <td><label class="label">Date of Birth</label></td>
-          <td><input type="date" class="textbox"  name="dob" placeholder="Date of Birth" formControlName="dob"></td>
+          <td><input type="date" [(ngModel)]="dob" class="textbox"  name="dob" placeholder="Date of Birth" formControlName="dob"></td>
       </tr>
 
       <tr>
           <td><label class="label">Mobile Number</label></td>
-          <td><input type="tel" class="textbox" name="mobileNumber" placeholder="Mobile Number" formControlName="mobileNumber"></td>
+          <td><input type="tel" [(ngModel)]="mobileNumber" class="textbox" name="mobileNumber" placeholder="Mobile Number" formControlName="mobileNumber"></td>
       </tr>
 
       <tr>
           <td><label class="label">Aadhaar Number</label></td>
-          <td><input type="text" class="textbox" name="aadhaar" placeholder="Aadhaar Number" formControlName="aadhaar"></td>
+          <td><input type="text" [(ngModel)]="aadhaar" class="textbox" name="aadhaar" placeholder="Aadhaar Number" formControlName="aadhaar"></td>
       </tr>
 
 
       <tr>
           <td><label class="label">Email id</label></td>
-          <td><input type="email"  [(ngModel)]="emailId" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
-            email is : {{emailId}}
-        </tr>
+          <td><input type="email"  [(ngModel)]="email" class="textbox" name="email" placeholder="Email id" formControlName="email"></td>
+      </tr>
       
-      </table>
+      </table>-->
       
-      <table align="right">
+      <!--<table align="right">
           <tr>
               <td> <label class="label"></label> </td>
               <td></td>         
@@ -57,14 +115,14 @@
     
           <tr>
               <td><label class="label">Password</label></td>
-              <td><input type="password" class="textbox" name="password" placeholder="Password" formControlName="password"></td>
+              <td><input type="password" [(ngModel)]="password" class="textbox" name="password" placeholder="Password" formControlName="password"></td>
               
           </tr>
     
           <tr>
               <td><label class="label">Confirm password</label></td>
-              <td><input type="password" class="textbox" name="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword"></td>
-          </tr>
+              <td><input type="password" [(ngModel)]="confirmPassword" class="textbox" name="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword"></td>
+          </tr>-->
 
          <!-- <tr>
             <td><label class="label">City</label></td>
@@ -80,7 +138,7 @@
           <tr>
               <td><label class="label">PIN Code</label></td>
               <td><input type="text" class="textbox" name="pincode" placeholder="PIN Code" formControlName="pincode"></td>
-          </tr>-->
+          </tr>
       </table>
       
       <table align="center">
@@ -88,7 +146,7 @@
       </table>
       </form>
       </div>
-      </div>
+      </div>-->
       
       <!--<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
       <tr>

@@ -1,0 +1,37 @@
+<div class="container1 color-light">
+    <div class="col">
+        <form [formGroup]="loginForm" novalidate>
+        <table align="center">
+            <label class="login_heading">GADGET SELECTION</label>
+          </table>
+          <table  align="center">
+                  <tr>
+                      <td><label class="label">To insure your <!--<a routerLink="/mobileSelect">Click here</a>--></label></td>
+                      <td><label class="label">Laptop - Select your  <!--<a routerLink="/mobileSelect">Click here</a>--></label></td>
+                      <td><label class="label">&nbsp;Laptop Brand</label></td>                      
+                    </tr>          
+                      <tr>
+                          <td align="center"><img src="../assets/rsz_hp_logo.png" alt="mobile" class="img-thumbnail" (click)="goToHpSelect()"/></td>
+                          <td align="center"><img src="../assets/rsz_acer_logo.png" alt="mobile" class="img-thumbnail" (click)="goToAcerSelect()"/></td>
+                          <td align="center"><img src="../assets/rsz_lenovo_logo.png" alt="mobile" class="img-thumbnail"/></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="../assets/rsz_samsung_logo.png" alt="mobile" class="img-thumbnail"/></td>
+                            <td align="center"><img src="../assets/rsz_apple_logo.png" alt="mobile" class="img-thumbnail"/></td>
+                              <td align="center"><img src="../assets/rsz_dell_logosvg_.png" alt="mobile" class="img-thumbnail"/></td>    
+                        </tr>  
+          </table>
+          
+          </form>       
+      </div>
+      </div>
+      <br>
+      <app-footer></app-footer>

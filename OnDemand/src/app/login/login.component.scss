@@ -139,7 +139,7 @@ input[type=date]::-webkit-inner-spin-button {
     background-color: #9fee9d;
 }
 
-.container{
+/*.container{
     /*min-height: 100%; 
     // /height: auto !important; /*Cause footer to stick to bottom in IE 6*/
     /* -100px; /*Allow for footer height*/
@@ -150,7 +150,7 @@ input[type=date]::-webkit-inner-spin-button {
     height: 100%;
     margin: 0 auto;*/
 
-    top: 100px; bottom: 100px; overflow: auto;
+ /*   top: 100px; bottom: 100px; overflow: auto;
      flex-shrink: 0;
      background-color: #e7ebf0;
 }
@@ -158,7 +158,21 @@ input[type=date]::-webkit-inner-spin-button {
 .container-fluid{
     height:auto;
     background-color: #e7ebf0;
-}
+}*/
+
+/*.well{
+    background-color: #e7ebf0;
+    border: black solid 0.1px;
+    //height: 50% auto;
+    //width: 30% auto;
+    //width: 500px; 
+    //margin: 0 auto;
+    //padding-block-end: 0% auto;
+    word-wrap: normal;
+    -ms-word-wrap: normal;
+        
+}*/
+
 
 
 

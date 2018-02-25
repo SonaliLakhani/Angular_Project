@@ -1,0 +1,59 @@
+<!-- Sonali -->
+<div class="container1 color-light">
+    <div class="col">
+      <form [formGroup]="samsungSelectForm" class="was-validated" novalidate>
+        
+      <table align="center">
+          <label class="register_heading">Please enter your mobile details</label>
+        </table>
+        <!--bootstrap code starts-->        
+        <div class="container">
+          <div class="well">
+            <div class="form-group col-4">
+                <label for="brand" class="control-label label">Brand </label>                   
+                <input class="form-control input-lg" id="brand" type="text" name="brand"  placeholder="Brand" formControlName="brand" value="Samsung" disabled required>
+                <!--<div class="invalid-feedback">Email id is required</div> -->
+              </div>
+              <div class="form-group col-4">
+                  <label for="model" class="control-label label">Model </label>                    
+                  <select name="model" formControlName="model" class="form-control input-lg is-invalid" placeholder="Choose Plan" required>
+                      <option>--Model--</option>
+                      <option>J2 Pro</option>
+                      <option>J7 Nxt</option>
+                      <option>Note 8</option>
+                      <option>J3 Prime</option>
+                      <option>C7 Pro</option>
+                    </select>
+                </div>
+                <div class="form-group col-4">
+                    <label for="purchaseDt" class="control-label label">Purchase Date </label>                  
+                    <input class="form-control is-invalid" id="purchaseDt" type="date" name="purchaseDt"  placeholder="Purchase Date" formControlName="purchaseDt" required>
+                    <!--<div class="invalid-feedback">Email id is required</div> -->
+                  </div>
+                  <div class="form-group col-4">
+                      <label for="brand" class="control-label label">Purchase Amount </label>                   
+                      <input class="form-control input-lg is-invalid" id="purchaseAmt" type="text" name="purchaseAmt"  placeholder="Purchase Amount" formControlName="purchaseAmt" required>
+                      <!--<div class="invalid-feedback">Email id is required</div> -->
+                    </div>
+                  <div class="form-group col-4">
+                      <label for="imei" class="control-label label">IMEI No</label>   
+                      <input class="form-control is-invalid" id="imei" type="text" name="imei"  placeholder="IMEI No" formControlName="imei" required>       
+                    <!--<div class="invalid-feedback">Email id is required</div> -->
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="invoice" class="control-label label">Upload invoice copy</label>     
+                        <input class="form-control is-invalid" id="invoice" type="file" name="invoice"  placeholder="IMEI No" formControlName="invoice" required>
+                      <!--<div class="invalid-feedback">Email id is required</div> -->
+                      </div>
+          </div>
+          </div>
+  
+          <table align="center">
+              <input type="submit" value="NEXT" [disabled]="!samsungSelectForm.valid" class="submit" (click)="goToMobilePlan()">
+            </table>
+            </form>
+            </div>
+          </div>        
+            
+        <app-footer></app-footer>
+  

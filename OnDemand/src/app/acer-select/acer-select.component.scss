@@ -16,6 +16,7 @@
     font-family: 'Elephant';
     font-size:30px;
     color: #08314d;
+   // margin-bottom: 70px;
 }
 
 .label{
@@ -37,13 +38,13 @@
    // color: yellow;
    // caret-color: red;
    background-color: rgb(255, 248, 248);
-   color: rgb(31, 28, 28);
-   
+   //background-color: rgb(224, 236, 204);
+   color: #DE2A00;
   
 }
 
 input:focus{
-    background-color: #fcfcce;
+    background-color:  #fcfcce;
 }
 
 .submit{
@@ -54,8 +55,8 @@ input:focus{
     color: rgb(247, 250, 252);
     font-size: 20px;
     font-family: 'Rockwell';
-    margin-bottom: 20px;
-    //margin-top: 380px;
+    margin-bottom: 80px;
+    margin-top: 30px;
     cursor:pointer;
     border-radius: 13%;
     align-items: center;
@@ -71,18 +72,50 @@ input:focus{
   }
 
   .submit:disabled{
-      background-color: #d5d6d6;
-  }
+    background-color: #d5d6d6;
+}
 
-  input[type=date]::-webkit-inner-spin-button {
+input[type=date]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     display: none;
 }
 
-.password_creation{
-    //float: right;
-    margin-right: 10px auto;
+.form-inline {
+    padding:10px;
 }
-//actual code ends
+
+.form-inline > * {
+    margin:10px 20px !important;
+}
+
+.main-div {
+    
+        //width: 100px;
+        //height: 100px;
+        background-color: #e7ebf0;    
+        //position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;      
+    
+        margin: auto;
+    
+
+}
+
+div{
+    //width: 100px;
+    //height: 100px;
+    background-color: #f1f1f1;
+
+    position: -ms-page;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
 
 

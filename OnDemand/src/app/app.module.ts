@@ -17,6 +17,12 @@ import { MobilePlanComponent } from './mobile-plan/mobile-plan.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentSuccessComponent } from './payment-success/payment-success.component'; 
 import {SharedServiceService} from './shared-service.service';
+import { MobileBrandSelectComponent } from './mobile-brand-select/mobile-brand-select.component';
+import { SamsungSelectComponent } from './samsung-select/samsung-select.component';
+import { AppleSelectComponent } from './apple-select/apple-select.component';
+import { LaptopBrandSelectComponent } from './laptop-brand-select/laptop-brand-select.component';
+import { HpSelectComponent } from './hp-select/hp-select.component';
+import { AcerSelectComponent } from './acer-select/acer-select.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,13 @@ import {SharedServiceService} from './shared-service.service';
     LaptopSelectComponent,
     MobilePlanComponent,
     PaymentComponent,
-    PaymentSuccessComponent
+    PaymentSuccessComponent,
+    MobileBrandSelectComponent,
+    SamsungSelectComponent,
+    AppleSelectComponent,
+    LaptopBrandSelectComponent,
+    HpSelectComponent,
+    AcerSelectComponent
     
   ],
   imports: [

@@ -14,4 +14,8 @@ export class PaymentSuccessComponent implements OnInit {
   ngOnInit() {
   }
 
+  backToHome() : void{
+    this._router.navigate(['/gadget']);
+  }
+
 }
